@@ -13,3 +13,4 @@ having avg(isnull(datediff(second, call.start_time, call.end_time_ampm),0)) > (s
 order by calls desc, country.id asc;
 
 -- comment 2
+--- current date
