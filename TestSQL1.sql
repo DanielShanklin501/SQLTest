@@ -1,5 +1,5 @@
 select
-	country.country_name_eng,
+	country.country_name_eng AS tk,
 	sum(case when call.id is null then 1 else 0 end) as calls,
 	avg(isnull(datediff(second, call.start_time, call.end_time),0)) as avg_difference
 from countrycodes AS country 
